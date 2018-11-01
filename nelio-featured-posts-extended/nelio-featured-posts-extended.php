@@ -30,7 +30,7 @@ class NelioExtended_Plugin
 	public function featuredpost_func($param)
     {
 		$res = '';
-		if( method_exists( NelioFPSettings, get_list_of_feat_posts ) )
+		if( method_exists( 'NelioFPSettings', 'get_list_of_feat_posts' ) )
 		{
 			$fps = NelioFPSettings::get_list_of_feat_posts();
 			if ( count( $fps ) > 0 ) {
@@ -53,13 +53,13 @@ class NelioExtended_Plugin
 	}
 	
 	public function my_custom_route(\WP_REST_Request $request){
-		//return rest_ensure_response( 'Hello World! This is my first REST API' );
+		//return rest_ensure_response( 'Hello World!' );
 		//custom format
 		//return rest_ensure_response( NelioFPSettings::get_list_of_feat_posts() ); 
 		
 		//format to wordpress normal rest response
 		$posts_arr = array();
-		if( method_exists( NelioFPSettings, get_list_of_feat_posts ) )
+		if( method_exists( 'NelioFPSettings', 'get_list_of_feat_posts' ) )
 		{
 			$posts = NelioFPSettings::get_list_of_feat_posts();
 			

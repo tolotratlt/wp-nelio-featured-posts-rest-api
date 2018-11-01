@@ -9,7 +9,7 @@ GET /wp-json/nelioextended/featuredposts
 ```
 
 ## Installation
-Download project. Put **nelio-featured-posts-extended** directory and its content into wordpress plugin (by default: wp-content/plugins/ )
+Download project. Put **nelio-featured-posts-extended** directory and its content into wordpress plugin folder(by default: wp-content/plugins/ )
 
 To do list
 - [x] REST API for Featured posts.
